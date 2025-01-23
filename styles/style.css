@@ -1,7 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--background-image);
   background-position: center;
   background-attachment: fixed;
@@ -83,6 +80,15 @@
   padding-block-end: 4px;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-border-hover-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button_active {
   pointer-events: none;
   border: 1px solid var(--accent-color);
@@ -95,8 +101,6 @@
   color: var(--title-color);
   align-self: flex-start;
 }
-
-
 
 .header__description {
   font-weight: 700;
@@ -130,8 +134,18 @@
   display: grid;
   gap: 10px;
 }
+
 .point__href {
   text-shadow: 2px 2px 0 var(--href-color);
+}
+
+.point__href:focus-visible {
+  outline: none;
+  border: 1px solid var(--text-color);
+}
+
+.point__href:hover {
+  border-block-end: 1px solid var(--text-color);
 }
 
 .point__text {
@@ -290,7 +304,7 @@
     padding-block-end: 60px;
   }
 
-  .gallery__picture{
+  .gallery__picture {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, fit-content);
     gap: 20px;

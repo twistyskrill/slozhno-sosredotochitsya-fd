@@ -1,14 +1,4 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --background-image: url(/images/cover-image-light.png);
   --accent-color: #353430;
   --text-color: #353430;
@@ -19,10 +9,10 @@
   --text-description-color: #353430;
   --point-title-color: #353430;
   --href-color: #FF8DCB;
+  --button-border-hover-color: rgba(50, 49, 45, 0.4);
 }
 
 .theme-light .footer__title {
-  /* Вам также нужно будет написать ряд подобных селекторов */
   text-shadow: 2px 2px 0 #FF0070;
 }
 
@@ -42,6 +32,7 @@
     --text-description-color: #353430;
     --point-title-color: #353430;
     --href-color: #FF8DCB;
+    --button-border-hover-color: rgba(50, 49, 45, 0.4);
   }
 }
 

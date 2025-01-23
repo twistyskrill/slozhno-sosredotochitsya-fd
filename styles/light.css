@@ -9,8 +9,39 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: url(/images/cover-image-light.png);
+  --accent-color: #353430;
+  --text-color: #353430;
+  --title-color: #FFC2E6;
+  --text-bg-color: #FF8DCB;
+  --bg-color: #FFF1F7; 
+  --text-quetion-color: #353430;
+  --text-description-color: #353430;
+  --point-title-color: #353430;
+  --href-color: #FF8DCB;
 }
 
-.theme-light .page {
+.theme-light .footer__title {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  text-shadow: 2px 2px 0 #FF0070;
 }
+
+.theme-light .rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url(/images/cover-image-light.png);
+    --accent-color: #353430;
+    --text-color: #353430;
+    --title-color: #FFC2E6;
+    --text-bg-color: #FF8DCB;
+    --bg-color: #FFF1F7; 
+    --text-quetion-color: #353430;
+    --text-description-color: #353430;
+    --point-title-color: #353430;
+    --href-color: #FF8DCB;
+  }
+}
+
